@@ -1,0 +1,4 @@
+---
+- include_tasks: update-1.7.1.yml
+- include_tasks: ald_install.yml
+- include_tasks: ald_init.yml

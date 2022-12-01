@@ -1,0 +1,13 @@
+---
+- name: repo add
+  template:
+    src: sources.list.j2
+    dest: /etc/apt/sources.list
+  
+- name: udate on 1.7.1
+  apt: 
+    update_cache: yes
+    name: "*"
+    state: latest
+  
+

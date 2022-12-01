@@ -1,0 +1,6 @@
+---
+- name: aldpro dc init
+  shell: sudo /opt/rbta/aldpro/mp/bin/aldpro-server-install.sh -d rbt.org -n dc -p 7895123_new --no-reboot
+
+- name: reboot server
+  reboot:
