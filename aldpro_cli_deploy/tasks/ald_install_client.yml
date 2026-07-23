@@ -1,0 +1,14 @@
+---
+- name: ald_repo add
+  template:
+    src: aldpro.list.j2
+    dest: /etc/apt/sources.list.d/aldpro.list
+
+- name: update
+  apt: 
+    update_cache: yes
+
+- name: install ald_pro dc
+  shell: sudo DEBIAN_FRONTEND=noninteractive apt-get install -q -y aldpro-client
+
+  

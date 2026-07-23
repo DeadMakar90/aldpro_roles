@@ -1,0 +1,6 @@
+---
+- name: aldpro client init
+  shell: sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c {{domain_name | quote }} -u {{admin_user | quote }} -p {{ admin_pass | quote }} -d {{ hostname | quote }} -i -f
+
+- name: reboot server
+  reboot:
