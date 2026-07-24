@@ -1,2 +1,9 @@
 ---
-# vars file for aldpro_deploy
+alse_repo_branch: "" # ветка репозитория frozen или stable
+alse_version: "" # версия обнолвения astra linux
+ald_version : ""
+domain_name: "" # имя домена
+admin_user: "" # учетная запись администратора домена
+admin_pass: "" # пароль админа
+hostname: "{{ ansible_hostname }}" # имя хоста получаемое из фактов ansible
+
