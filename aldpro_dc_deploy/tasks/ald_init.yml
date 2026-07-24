@@ -1,0 +1,10 @@
+---
+- name: aldpro dc init
+  #shell: sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c {{domain_name | quote }} -u {{admin_user | quote }} -p {{ admin_pass | quote }} -d {{ hostname | quote }} -i -f
+  shell: |
+      aldpro-server-install -d {{ domain_name | quote }} -n {{ hostname | quote }} -p {{ admin_pass | quote }} --ip 192.168.12.60 --setup_gc --setup_syncer --no-reboot
+      touch /opt/rbta/aldpro/.dc_init
+  args:
+    creates: /opt/rbta/aldpro/.dc_init
+    
+  notify: reboot_server

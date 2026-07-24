@@ -1,0 +1,7 @@
+[aldpro_servers]
+#ald-ps01 ansible_host=192.168.14.26
+ald-ms01 ansible_host=192.168.14.27
+#ald-ls01 ansible_host=192.168.14.28
+#ald-netos01 ansible_host=192.168.14.29
+[ald_dc]
+ald-dc01 ansible_host=192.168.12.60
