@@ -1,6 +1,0 @@
----
-- name: Настройка клиента алд
-  hosts: aldpro_servers
-  become: true
-  roles:
-    - aldpro_cli_deploy
