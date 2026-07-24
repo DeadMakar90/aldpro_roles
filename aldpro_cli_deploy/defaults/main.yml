@@ -1,0 +1,6 @@
+---
+# defaults file for aldpro_deploy
+domain_name: "enc.local"
+admin_user: "admin"
+admin_pass: "7895123_new"
+hostname: "{{ ansible_hostname }}"

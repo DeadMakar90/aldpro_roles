@@ -1,0 +1,4 @@
+---
+- name: reboot_server
+  reboot:
+    msg: "Перезагрузка после установки ALD Pro клиента"
