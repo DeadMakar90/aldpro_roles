@@ -4,11 +4,10 @@
     src: aldpro.list.j2
     dest: /etc/apt/sources.list.d/aldpro.list
 
-- name: update
-  apt: 
+- name: aldpro client install
+  ansible.builtin.apt:
+    name: aldpro-client
+    state: present
     update_cache: yes
-
-- name: install ald_pro cli
-  shell: sudo DEBIAN_FRONTEND=noninteractive apt-get install -q -y aldpro-client
-
+  become: true
   
